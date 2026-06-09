@@ -1,4 +1,3 @@
-from autogen.agentchat.contrib.retrieve_user_proxy_agent import RetrieveUserProxyAgent
 from typing import Annotated
 
 
@@ -12,6 +11,9 @@ Retrieved context is: {input_context}
 
 
 def get_rag_function(retrieve_config, description=""):
+    from autogen.agentchat.contrib.retrieve_user_proxy_agent import (
+        RetrieveUserProxyAgent,
+    )
 
     def termination_msg(x):
         return (
