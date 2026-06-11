@@ -42,3 +42,4 @@ finrobot_equity/web_app/data/*.db
 finrobot_equity/core/output/
 
 claude_session.md
+CLAUDE.md
